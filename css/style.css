@@ -1,0 +1,128 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.checked {
+  color: orange;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+ /* background: rgba(187, 175, 107, 0.5); */
+}
+/* 
+font: 72px
+60px
+36px
+ */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+.logo-cover{
+          /* position:relative; */
+          padding: 0;
+          display: block;
+          margin: 0 auto;
+          max-height: 100%;
+          max-width: 100%;
+     
+
+}
+header{
+     display: flex;  
+     padding: 2%;
+}
+
+.header-text{
+     width: 50%;
+     
+}
+.header-text h1{
+     font-size: 350%;
+     font-weight: 900;
+     padding-top: 0;
+}
+
+.header-text h3{
+     color: #6B7280;
+}
+.title{
+ 
+     color: rgb(115 98 80);
+     text-shadow: 1px 1px rgb(38 16 52);
+ 
+}
+.header-image{
+     width: 50%;
+}
+
+.header-image img{
+     width: 50%;
+     border-radius: 5%;
+     position: absolute;
+     left: 50vw;
+     top: 50vh;
+     z-index: 1;
+}
+footer {
+
+}
+/* @media only screen and (min-width: 800px){
+     .header-image img {
+               
+               top: 50%;
+               
+          }
+} */
+
+@media only screen and (max-width: 650px){
+     .logo-cover{
+          
+     }
+     header{
+          flex-direction: column;
+         
+     }
+
+     .header-text {
+               text-align: center;
+               width: 100%;
+               padding: 2%;
+     }
+
+     .header-image {
+               width: 100%;
+          }
+
+     .header-image img {
+          position: static;
+          width: 100%;
+}
+     
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
