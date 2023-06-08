@@ -41,7 +41,7 @@ font: 72px
 
 
 .logo-cover{
-          /* position:relative; */
+          position:relative;
           padding: 0;
           display: block;
           margin: 0 auto;
@@ -89,13 +89,21 @@ header{
 footer {
 
 }
-/* @media only screen and (min-width: 800px){
+@media only screen and (max-width: 950px){
      .header-image img {
                
-               top: 50%;
+               top: 30%;
                
           }
-} */
+}
+
+@media only screen and (min-height: 200px){
+     .header-image img {
+     
+               position: static;
+     
+          }
+}
 
 @media only screen and (max-width: 650px){
      .logo-cover{
@@ -114,7 +122,7 @@ footer {
 
      .header-image {
                width: 100%;
-          }
+          } 
 
      .header-image img {
           position: static;
@@ -126,3 +134,6 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+
