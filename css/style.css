@@ -78,12 +78,21 @@ header{
      width: 50%;
 }
 
-.header-image img{
+/* .header-image img{
      width: 50%;
      border-radius: 5%;
      position: absolute;
      left: 50vw;
      top: 50vh;
+     z-index: 1;
+} */
+
+.header-image img {
+     width: 50%;
+     border-radius: 5%;
+     position: absolute;
+     left: 600px;
+     top: 350px;
      z-index: 1;
 }
 footer {
@@ -97,13 +106,13 @@ footer {
           }
 }
 
-@media only screen and (min-height: 200px){
+/* @media only screen and (min-height: 200px){
      .header-image img {
      
                position: static;
      
           }
-}
+} */
 
 @media only screen and (max-width: 650px){
      .logo-cover{
