@@ -97,37 +97,18 @@ header{
  
 }
 
-.inputForm{
-     margin-top: 25px;
-}
-.inputForm input{
-     padding: 6px 10px;
-     border-color: #D1D5DB;
-     border-radius: 6px;
-}
-
-.inputForm button{
-     background: #a660b3;
-     color: white;
-     padding: 6px 14px;
-     border: none;
-     border-radius: 6px;
-}
-
-
 .rating{
      margin-top: 20px;
      margin-bottom: 20px;
      display: flex;
      align-items: center;
      justify-content: space-between;
-     width: 80%;
      max-width: 400px;
+     min-width: 260px;
      
 }
 
 .review{
-     width: 100%;
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -148,10 +129,12 @@ header{
 
 .reviewName{
      font-size: 15px;
+     margin-top: 10px;
 }
 
 .userImage {
-     width: 40px;
+     width: 50px;
+     height: 50px;
      border-radius: 100%;
      border: 1px solid red;
      margin-right: 10px;
@@ -184,9 +167,165 @@ header{
           z-index: 0;
 }
 
+.section{
+     display: flex;
+     margin-top: 60px;
+     margin-bottom: 60px;
+     align-items: center;
+}
 
-footer {
+.main-section-image{
+     width: 50%;
+     margin: 20px;
+     border-radius: 2%;
+}
 
+.sectionText{
+     margin: 50px 5px;
+}
+
+.sectionText h2{
+     font-size: 30px;
+}
+
+.rightImage{
+     margin-left: 65px;
+}
+
+.leftImage{
+     margin-right: 65px;
+}
+
+.section hr{
+     color: #6B7280;
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+
+.featuredReview{
+     background-color: rgba(186, 104, 200, 0.8);
+     color: white;
+     padding: 60px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-bottom: 100px;
+}
+
+.featuredReviewText{
+     text-align: center;
+     font-weight: 700;
+     font-size: 26px;
+     margin-bottom: 40px;
+}
+
+.featuredReviewUser{
+     display: flex;
+     align-items: center;
+     font-weight: 500;
+     font-size: 17px;
+     
+}
+
+
+.box {
+    
+     position: relative;
+     background-color: #f5ecf7;
+     padding: 20px;
+     width: 90%;
+     height: 400px;
+     border: 1px solid purple;
+     text-align: center;
+     margin: 0 auto;
+     z-index: -2;
+     border-radius: 4%;
+}
+
+.box-design-1,
+.box-design-2{
+     content: "";
+     position: absolute;
+     bottom: 0;
+     height: 0;
+     z-index: -1;
+     
+}
+
+.box-design-1 {
+     left: 0;
+     border-left: 0 solid transparent;
+     border-right: 450px solid transparent;
+     border-bottom: 150px solid rgba(186, 104, 200, 0.05);
+}
+
+.box-design-2 {
+     right: 0;
+     border-left: 500px solid transparent;
+     border-right: 0 solid transparent;
+     border-bottom: 380px solid rgba(186, 104, 200, 0.1);
+          
+}
+
+.footer-content{
+     margin-top: 60px;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     
+}
+
+.userList {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+}
+
+.userList .userImage {
+     margin: 15px;
+
+}
+.footerInvite{
+     margin-top: 40px;
+     font-weight: 700;
+     font-size: 36px;
+
+}
+
+.inputForm {
+     margin-top: 25px;
+    
+}
+
+.emailInput {
+     padding: 6px 10px;
+     border-color: #D1D5DB;
+     border-radius: 6px;
+     width: 260px;
+     background-color: white;
+     transition: border-color 0.3s;
+}
+
+.inputForm .emailInput:focus{
+     border-color: purple !important;
+}
+/* .emailInput:focus {
+     border-color: #a660b3;
+} */
+
+.submitButton {
+     background: #a660b3;
+     color: white;
+     padding: 6px 14px;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+}
+
+.submitButton:hover {
+     background: #87437a;
 }
 
 
@@ -202,13 +341,6 @@ footer {
      }
 }
 
-/* @media only screen and (min-height: 200px){
-     .header-image img {
-     
-               position: static;
-     
-          }
-} */
 
 @media only screen and (max-width: 900px){
      .logo-cover{
@@ -216,7 +348,7 @@ footer {
      }
      header{
           flex-direction: column;
-   
+          margin-bottom: 20px;
          
      }
  
@@ -242,7 +374,23 @@ footer {
           width: 100%;
      }
 
+     .leftImage{
+          flex-direction: column-reverse;
+          margin: 10px;
+     }
+
+     .rightImage{
+          flex-direction: column;
+          margin: 10px;
+     }
      
+     .main-section-image{
+          width: 100%;
+     }
+
+     .box{
+          height: 500px;
+     }
 }
 
 /******************************************
