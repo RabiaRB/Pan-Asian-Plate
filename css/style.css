@@ -101,6 +101,7 @@ header{
      justify-content: space-between;
      max-width: 400px;
      min-width: 260px;
+     flex-wrap: wrap;
      
 }
 
@@ -143,7 +144,6 @@ header{
      position: absolute;
      left: 550px;
      top: -120px;
-     z-index: 1;
      
      
 }
@@ -152,16 +152,7 @@ header{
      width: 100%;
      
 }
-.header-image-box{
-     color: rgb(249 250 251);
-     color: #6B7280;
-     width: 300px;
-     height: 500px;
-     position: absolute;
-          left: 600px;
-          top: 120px;
-          z-index: 0;
-}
+
 
 .section{
      display: flex;
@@ -235,7 +226,6 @@ header{
      text-align: center;
      margin: 0 auto;
      z-index: -2;
-     border-radius: 4%;
 }
 
 
@@ -252,15 +242,15 @@ header{
 .box-design-1 {
      left: 0;
      border-left: 0 solid transparent;
-     border-right: 450px solid transparent;
-     border-bottom: 150px solid rgba(186, 104, 200, 0.05);
+     border-right: 150px solid transparent;
+     border-bottom: 50px solid rgba(186, 104, 200, 0.05);
 }
 
 .box-design-2 {
      right: 0;
-     border-left: 500px solid transparent;
+     border-left: 100px solid transparent;
      border-right: 0 solid transparent;
-     border-bottom: 380px solid rgba(186, 104, 200, 0.1);
+     border-bottom: 180px solid rgba(186, 104, 200, 0.1);
           
 }
 
@@ -305,7 +295,7 @@ header{
      padding: 6px 10px;
      border-color: #D1D5DB;
      border-radius: 6px;
-     width: 260px;
+     width: 50%;
      background-color: white;
      transition: border-color 0.3s;
 }
@@ -330,6 +320,10 @@ header{
 
 
 @media only screen and (min-width: 1250px){
+     body{
+          width: 100vw;
+          height: 100vh;
+     }
      .header-image {
                left: 700px;
                
