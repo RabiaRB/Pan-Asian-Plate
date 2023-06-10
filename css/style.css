@@ -230,13 +230,14 @@ header{
      background-color: #f5ecf7;
      padding: 20px;
      width: 90%;
-     height: 400px;
+     height: auto;
      border: 1px solid purple;
      text-align: center;
      margin: 0 auto;
      z-index: -2;
      border-radius: 4%;
 }
+
 
 .box-design-1,
 .box-design-2{
@@ -264,18 +265,21 @@ header{
 }
 
 .footer-content{
+     width: 100%;
      margin-top: 60px;
-     position: absolute;
      display: flex;
      flex-direction: column;
-     justify-content: space-around;
+     justify-content: center;
+     align-items: center;
+
      
 }
 
 .userList {
      display: flex;
      flex-wrap: wrap;
-     justify-content: center;
+     justify-content: space-evenly;
+    
      
 }
 
@@ -292,6 +296,8 @@ header{
 
 .inputForm {
      margin-top: 25px;
+     margin-bottom: 25px;
+
     
 }
 
@@ -337,9 +343,7 @@ header{
 
 
 @media only screen and (max-width: 900px){
-     .logo-cover{
-          
-     }
+   
      header{
           flex-direction: column;
           margin-bottom: 20px;
@@ -383,7 +387,7 @@ header{
      }
 
      .box{
-          height: 500px;
+          /* height: 500px; */
      }
 }
 
