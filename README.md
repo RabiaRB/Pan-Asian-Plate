@@ -5,7 +5,17 @@ Welcome to the repository for a restaurant website created using HTML, CSS, and 
 
 **Link to project:** [Pan-Asian Plate](https://pan-asian-plate.netlify.app/)
 
-![View The Website:](https://github.com/RabiaRB/Pan-Asian-Plate/assets/58439957/860e7d97-34e7-496d-a00f-0e144b5d1106)
+
+# Desktop View
+
+<img src="./images/pan-asian-plate.netlify.app_.png" width="300px">
+
+# Mobile View
+<img src="./images/pan-asian-plate.netlify.app_(iPhone 12 Pro).png" width="300px">
+
+# Working
+<img src="https://github.com/RabiaRB/Pan-Asian-Plate/assets/58439957/860e7d97-34e7-496d-a00f-0e144b5d1106" width="300px">
+
 
 
 ## How It's Made:
